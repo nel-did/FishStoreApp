@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DirectCatch - Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container py-4 text-light">
+    <!-- Search and Filters -->
+    <div class="p-3 rounded-4 mb-3">
+      <div class="input-group">
+        <input type="text" class="form-control rounded-pill" placeholder="Search">
+        <span class="input-group-text bg-transparent border-0"><i class="bi bi-search text-light"></i></span>
+      </div>
+      <div class="mt-2">🚚 Delivery location: <strong>KL</strong></div>
+    </div>
+    <div class="d-flex gap-2 mb-3">
+      <button class="btn btn-light flex-fill">All</button>
+      <button class="btn btn-light flex-fill">Fresh catch</button>
+      <button class="btn btn-light flex-fill">Frozen</button>
+    </div>
+
+    <!-- Product Grid -->
+    <h2 class="mb-3">Today Catches</h2>
+    <div class="row g-3">
+      <!-- Example Product Card -->
+      <div class="col-6">
+        <div class="card p-2">
+          <img src="images/Prussian Carp.jpg" class="card-img-top" alt="Fish Name">
+          <div class="card-body text-center">
+            <h5 class="card-title">Prussian Carp</h5>
+            <p>RM <span class="unit-price">40</span>/1kg</p>
+            <div class="mb-2">⭐⭐⭐⭐⭐</div>
+
+            <!-- Customization Options -->
+            <div class="mb-3 customize">
+              <label class="form-label">Quantity:</label>
+              <div class="d-flex justify-content-center align-items-center mb-2">
+                <button class="btn btn-secondary btn-sm me-2 btn-dec" type="button">-</button>
+                <span class="qty">1</span>
+                <button class="btn btn-secondary btn-sm ms-2 btn-inc" type="button">+</button>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-scales" type="checkbox">
+                <label class="form-check-label">Remove scales</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-insides" type="checkbox">
+                <label class="form-check-label">Remove insides</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-head" type="checkbox">
+                <label class="form-check-label">Remove head</label>
+              </div>
+            </div>
+
+            <!-- Add to Cart -->
+            <button class="btn btn-primary w-100 btn-add"
+                    data-id="Prussian Carp"
+                    data-name="Prussian Carp"
+                    data-price="40"
+                    data-img="images/Prussian Carp.jpg">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat .col-6 for other products -->
+       <div class="col-6">
+        <div class="card p-2">
+          <img src="images/smoke carp.jpeg" class="card-img-top" alt="Fish Name">
+          <div class="card-body text-center">
+            <h5 class="card-title">Smoke Carp</h5>
+            <p>RM <span class="unit-price">40</span>/1kg</p>
+            <div class="mb-2">⭐⭐⭐⭐⭐</div>
+
+            <!-- Customization Options -->
+            <div class="mb-3 customize">
+              <label class="form-label">Quantity:</label>
+              <div class="d-flex justify-content-center align-items-center mb-2">
+                <button class="btn btn-secondary btn-sm me-2 btn-dec" type="button">-</button>
+                <span class="qty">1</span>
+                <button class="btn btn-secondary btn-sm ms-2 btn-inc" type="button">+</button>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-scales" type="checkbox">
+                <label class="form-check-label">Remove scales</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-insides" type="checkbox">
+                <label class="form-check-label">Remove insides</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-head" type="checkbox">
+                <label class="form-check-label">Remove head</label>
+              </div>
+            </div>
+
+            <!-- Add to Cart -->
+            <button class="btn btn-primary w-100 btn-add"
+                    data-id="Smoke Carp"
+                    data-name="Smoke Carp"
+                    data-price="40"
+                    data-img="images/smoke carp.jpeg">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card p-2">
+          <img src="images/salmon.jpg" class="card-img-top" alt="Fish Name">
+          <div class="card-body text-center">
+            <h5 class="card-title">Salmon</h5>
+            <p>RM <span class="unit-price">100</span>/1kg</p>
+            <div class="mb-2">⭐⭐⭐⭐⭐</div>
+
+            <!-- Customization Options -->
+            <div class="mb-3 customize">
+              <label class="form-label">Quantity:</label>
+              <div class="d-flex justify-content-center align-items-center mb-2">
+                <button class="btn btn-secondary btn-sm me-2 btn-dec" type="button">-</button>
+                <span class="qty">1</span>
+                <button class="btn btn-secondary btn-sm ms-2 btn-inc" type="button">+</button>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-scales" type="checkbox">
+                <label class="form-check-label">Remove scales</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-insides" type="checkbox">
+                <label class="form-check-label">Remove insides</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-head" type="checkbox">
+                <label class="form-check-label">Remove head</label>
+              </div>
+            </div>
+
+            <!-- Add to Cart -->
+            <button class="btn btn-primary w-100 btn-add"
+                    data-id="Salmon"
+                    data-name="Salmon"
+                    data-price="100"
+                    data-img="images/salmon.jpg">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card p-2">
+          <img src="images/Sea Bass.jpg" class="card-img-top" alt="Fish Name">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sea Bass</h5>
+            <p>RM <span class="unit-price">50</span>/1kg</p>
+            <div class="mb-2">⭐⭐⭐⭐⭐</div>
+
+            <!-- Customization Options -->
+            <div class="mb-3 customize">
+              <label class="form-label">Quantity:</label>
+              <div class="d-flex justify-content-center align-items-center mb-2">
+                <button class="btn btn-secondary btn-sm me-2 btn-dec" type="button">-</button>
+                <span class="qty">1</span>
+                <button class="btn btn-secondary btn-sm ms-2 btn-inc" type="button">+</button>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-scales" type="checkbox">
+                <label class="form-check-label">Remove scales</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-insides" type="checkbox">
+                <label class="form-check-label">Remove insides</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-head" type="checkbox">
+                <label class="form-check-label">Remove head</label>
+              </div>
+            </div>
+
+            <!-- Add to Cart -->
+            <button class="btn btn-primary w-100 btn-add"
+                    data-id="Sea Bass"
+                    data-name="Sea Bass"
+                    data-price="50"
+                    data-img="images/Sea Bass.jpg">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card p-2">
+          <img src="images/Tilapia.jpg" class="card-img-top" alt="Fish Name">
+          <div class="card-body text-center">
+            <h5 class="card-title">Tilapia</h5>
+            <p>RM <span class="unit-price">35</span>/1kg</p>
+            <div class="mb-2">⭐⭐⭐⭐⭐</div>
+
+            <!-- Customization Options -->
+            <div class="mb-3 customize">
+              <label class="form-label">Quantity:</label>
+              <div class="d-flex justify-content-center align-items-center mb-2">
+                <button class="btn btn-secondary btn-sm me-2 btn-dec" type="button">-</button>
+                <span class="qty">1</span>
+                <button class="btn btn-secondary btn-sm ms-2 btn-inc" type="button">+</button>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-scales" type="checkbox">
+                <label class="form-check-label">Remove scales</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-insides" type="checkbox">
+                <label class="form-check-label">Remove insides</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input remove-head" type="checkbox">
+                <label class="form-check-label">Remove head</label>
+              </div>
+            </div>
+
+            <!-- Add to Cart -->
+            <button class="btn btn-primary w-100 btn-add"
+                    data-id="Tilapia"
+                    data-name="Tilapia"
+                    data-price="35"
+                    data-img="images/Tilapia.jpg">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Nav -->
+<nav class="footer-nav">
+  <a href="index.html" class="footer-link">🏠</a>
+  <a href="shop.html"   class="footer-link">🏬</a>
+  <a href="profile.html" class="footer-link">👤</a>
+  <a href="cart.html"   class="footer-link">🛒</a>
+</nav>
+
+  <!-- Scripts -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const getCart = () => JSON.parse(localStorage.getItem('cart')||'[]');
+    const saveCart = cart => localStorage.setItem('cart', JSON.stringify(cart));
+
+    document.querySelectorAll('.card').forEach(card=>{
+      const dec = card.querySelector('.btn-dec');
+      const inc = card.querySelector('.btn-inc');
+      const qtyEl = card.querySelector('.qty');
+      dec.addEventListener('click', ()=>{ let v = parseInt(qtyEl.textContent); if(v>1) qtyEl.textContent = v-1; });
+      inc.addEventListener('click', ()=>{ let v = parseInt(qtyEl.textContent); qtyEl.textContent = v+1; });
+
+      const btn = card.querySelector('.btn-add');
+      btn.addEventListener('click', ()=>{
+        const id = btn.dataset.id;
+        const name = btn.dataset.name;
+        const price = parseFloat(btn.dataset.price);
+        const img = btn.dataset.img;
+        const qty = parseInt(qtyEl.textContent);
+        const options = {
+          scales: card.querySelector('.remove-scales').checked,
+          insides: card.querySelector('.remove-insides').checked,
+          head: card.querySelector('.remove-head').checked
+        };
+        let cart = getCart();
+        // merge if exists
+        const existing = cart.find(i=>i.id===id && JSON.stringify(i.options)===JSON.stringify(options));
+        if(existing){ existing.qty += qty; }
+        else { cart.push({id, name, price, img, qty, options}); }
+        saveCart(cart);
+        alert(`${name} (x${qty}) added to cart`);
+      });
+    });
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

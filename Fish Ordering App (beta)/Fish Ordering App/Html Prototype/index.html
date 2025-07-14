@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DirectCatch - Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container d-flex flex-column justify-content-center min-vh-100 text-light">
+      <div class="container"></div>
+    <div class="text-center mb-4 text-light">
+      <span class="fs-3 position-absolute top-0 start-0">⋮</span>
+      <img src="images/Logo.png" alt="DirectCatch Logo" class="mb-3" style="width:400px;">
+      <h1>DirectCatch</h1>
+    </div>
+    <div class="bg-white rounded-top-4 p-4 shadow-sm text-dark">
+      <form id="login-form">
+        <div class="mb-3">
+          <input type="text" id="login-user" class="form-control" placeholder="Email or Phone" required>
+        </div>
+        <div class="mb-3">
+          <input type="password" id="login-pass" class="form-control" placeholder="Password" required>
+        </div>
+        <div class="text-end mb-3">
+          <a href="forgot-password.html" class="small text-decoration-none">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary w-100 mb-2">Login</button>
+        <div class="text-center mb-3 small">or</div>
+        <a href="signup.html" class="btn btn-secondary w-100">Create an account</a>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer-nav">
+    <a href="index.html" class="footer-link">🏠</a>
+    <a href="shop.html"   class="footer-link">🏬</a>
+    <a href="profile.html" class="footer-link">👤</a>
+    <a href="cart.html"   class="footer-link">🛒</a>
+  </footer>
+
+  <script>
+  document.getElementById('login-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const user = document.getElementById('login-user').value;
+    localStorage.setItem('loginUser', user);
+    window.location.href = 'shop.html';
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

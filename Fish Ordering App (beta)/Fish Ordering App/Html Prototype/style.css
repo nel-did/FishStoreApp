@@ -1,0 +1,117 @@
+:root {
+  --color-primary: #667C99;      /* updated background color */
+  --color-accent: #B0C4B1;
+  --color-light: #FFFFFF;
+  --color-dark: #2E3A40;
+  --radius: 24px;
+  --spacing: 16px;
+  --font-sans: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-sans);
+  background: var(--color-primary);
+  color: var(--color-dark);
+}
+/* Components with primary background */
+.container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;    /* horizontally center */
+  padding: 0 1rem;   /* small side padding on mobile */
+}
+
+.footer-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background: var(--color-primary);
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-link {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 1.5rem;         /* icon size */
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+.footer-link:active,
+.footer-link:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+
+/* size your ship art */
+.ship-art {
+  max-width: 300px;      /* or whatever width matches your mockup */
+  height: auto;
+}
+
+/* make sure the container is centered and capped */
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.rounded-top-4,
+.card {
+  background: var(--color-primary) !important;
+}
+.navbar,
+.footer-nav {
+  background: var(--color-primary) !important;
+}
+/* Buttons */
+.btn-primary {
+  background: var(--color-accent) !important;
+  border-color: var(--color-accent) !important;
+  color: var(--color-dark) !important;
+  border-radius: var(--radius) !important;
+}
+
+.btn-accent {
+  background: var(--color-accent);
+  color: var(--color-dark);
+  border: none;
+}
+.btn-accent:focus, .btn-accent:hover {
+  background: darken(var(--color-accent), 5%);
+  color: var(--color-dark);
+}
+
+.btn-secondary {
+  background: #fff !important;
+  color: var(--color-dark) !important;
+  border: 1px solid var(--color-accent) !important;
+  border-radius: var(--radius) !important;
+}
+/* Inputs */
+.form-control {
+  border-radius: var(--radius) !important;
+  border: 1px solid var(--color-accent) !important;
+  background: var(--color-light) !important;
+}
+/* Cards */
+.card {
+  border-radius: var(--radius) !important;
+  color: var(--color-light) !important;
+}
+.card img {
+  border-radius: var(--radius) !important;
+}
+/* Tabs, checkout, cart items with rounded edges */
+.tabs .btn,
+.checkout,
+.cart-item {
+  border-radius: var(--radius) !important;
+}
